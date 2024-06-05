@@ -1,0 +1,1 @@
+jQuery(() => { jQuery("h1 a").attr('href', 'https://navas.design') })

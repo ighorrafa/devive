@@ -1,0 +1,90 @@
+.login h1 a {
+	background: url("../img/navas.svg") no-repeat scroll center 0 transparent;
+	width: 155px;
+	background-position: center;
+}
+
+body {
+	background-color: #f1f1f3;
+}
+
+.login form {
+	border: none;
+	-webkit-box-shadow: 0px 0px 30px 2px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0px 0px 30px 2px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 0px 30px 2px rgba(0, 0, 0, 0.2);
+	padding-bottom: 10px;
+}
+
+.login form .input {
+	border-radius: 4px;
+	border: 1px solid #f1f1f1;
+	background: #f1f1f3;
+	font-size: 13px;
+
+}
+
+.login form .input:focus {
+	border: none;
+	box-shadow: none;
+	border-bottom: 1px solid #508195;
+}
+
+#login {
+	position: absolute;
+	left: 50%;
+	width: 420px;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	padding: 0px;
+}
+
+#login #wp-submit {
+	position: relative;
+	right: 0px;
+	margin: 17px 0px;
+	padding: 0px 25px;
+	width: 100%;
+	border-radius: 0px;
+	background: #323232;
+	background: #000;
+	border: none;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 11px;
+	bottom: 0px;
+	height: 44px;
+	line-height: 44px;
+}
+
+.login .message {
+	background: #71aee6;
+	color: #fff;
+	text-align: center;
+}
+
+.login #login_error {
+	border-left-color: #d63638;
+	background: #d63637;
+	color: #fff;
+	text-align: center
+}
+
+.login .forgetmenot label {
+	font-size: 10px;
+	text-transform: uppercase;
+}
+
+.login #nav {
+	display: none;
+}
+
+.dashicons-visibility:before {
+	font-size: 12px;
+}
+
+@media only screen and (max-width : 480px) {
+	#login {
+		width: 95%;
+	}
+}

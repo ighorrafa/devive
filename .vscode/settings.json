@@ -1,0 +1,17 @@
+{
+	"liveSassCompile.settings.excludeList": [
+		"/**/node_modules/**",
+		"/**/wp-admin/**",
+		"/**/wp-content/plugins/**",
+		"/.vscode/**",
+		"/**/manual/src/scss/**",
+		"/**/themes/**/js/**"
+	],
+	"liveSassCompile.settings.formats": [
+		{
+			"format": "compressed",
+			"extensionName": ".min.css",
+			"savePath": "~/../css"
+		}
+	]
+}

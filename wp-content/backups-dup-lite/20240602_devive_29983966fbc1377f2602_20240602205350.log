@@ -1,0 +1,75 @@
+********************************************************************************
+DUPLICATOR-LITE PACKAGE-LOG: June 2, 2024 8:53 pm
+NOTICE: Do NOT post to public sites or forums 
+********************************************************************************
+VERSION:	1.5.9
+WORDPRESS:	6.5.3
+PHP INFO:	8.1.23 | SAPI: cgi-fcgi
+SERVER:		nginx/1.16.0 
+PHP TIME LIMIT: (0) no time limit imposed 
+PHP MAX MEMORY: 4294967296 (256M default) 
+MEMORY STACK: 8MB
+
+********************************************************************************
+DATABASE:
+********************************************************************************
+BUILD MODE:   PHP(query limit - 100)
+MYSQLTIMEOUT: 5000
+MYSQLDUMP:    Not Supported
+TABLES: total:13 | filtered:0 | create:13
+FILTERED: []
+SQL CREATED: 20240602_devive_29983966fbc1377f2602_20240602205350_database.sql
+SQL FILE SIZE: 1.66MB (1739904)
+SQL FILE TIME: 2024-06-02 20:53:58
+SQL RUNTIME: 0.99 sec.
+
+********************************************************************************
+ARCHIVE (ZIP):
+********************************************************************************
+ARCHIVE DIR:  C:/Users/rafae/Local Sites/devive/app/public
+ARCHIVE FILE: 20240602_devive_29983966fbc1377f2602_20240602205350_archive.zip
+FILTERS: *OFF*
+DIRS:
+	not set
+FILES:
+	not set
+EXTS:  not set
+----------------------------------------
+COMPRESSING
+SIZE:	87.53MB
+STATS:	Dirs 615 | Files 4,735
+SQL ADDED: 20240602_devive_29983966fbc1377f2602_20240602205350_database.sql
+ZipArchive Object
+(
+    [lastId] => 5349
+    [status] => 0
+    [statusSys] => 0
+    [numFiles] => 5350
+    [filename] => C:\Users\rafae\Local Sites\devive\app\public\wp-content\backups-dup-lite\tmp\20240602_devive_29983966fbc1377f2602_20240602205350_archive.zip
+    [comment] => 
+)
+
+FILE ADDED TO ZIP: 5349
+COMPRESSION RESULT: '1'
+COMPRESSED SIZE: 24.55MB
+ARCHIVE RUNTIME: 50.22 sec.
+MEMORY STACK: 10MB
+building installer
+TESTE DE CONSISTÊNCIA DE ARQUIVO: APROVADO
+
+********************************************************************************
+INTEGRITY CHECKS:
+********************************************************************************
+SQL FILE: 1.66MB
+INSTALLER FILE: 73.47KB
+ARCHIVE FILE: 26.4MB 
+CONTAGEM ESPERADA DE ARQUIVOS/DIRETÓRIOS: 5,350
+CONTAGEM REAL DE ARQUIVOS/DIRETÓRIOS: 5,349
+TESTE DE CONSISTÊNCIA DE ARQUIVO: Aprovado
+
+********************************************************************************
+RECORD ID:[1]
+TOTAL PROCESS RUNTIME: 52.76 sec.
+PEAK PHP MEMORY USED: 14MB
+DONE PROCESSING => 20240602_devive June 2, 2024 8:54 pm
+

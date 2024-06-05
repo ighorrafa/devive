@@ -1,0 +1,308 @@
+html.wp-toolbar {
+	padding-top: 0;
+}
+
+body,
+input,
+textarea,
+select,
+option,
+#wpadminbar,
+#wpadminbar * {
+	font-family: Roboto, sans-serif;
+}
+html :where(.editor-styles-wrapper) {
+	font-family: inherit;
+}
+
+body {
+	background: #fbfbfb;
+}
+
+
+
+.btAjuda,
+.btManual {
+	padding: 10px 30px;
+	border: 1px solid #d9dadb;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 11px;
+	color: #484848;
+	font-weight: 600;
+	margin-right: 10px;
+	margin-top: 10px;
+	display: inline-block;
+	transition: 0.3s;
+}
+
+.btAjuda:hover,
+.btManual:hover {
+	background: #ebebeb;
+	border: 1px solid #ebebeb;
+	color: #484848;
+}
+
+#adminmenuback {
+	background-image: url("../img/navas-branco-completa.svg");
+	background-position: 13px 13px;
+	background-size: 62px;
+	background-repeat: no-repeat;
+}
+
+#contextual-help-link-wrap {
+	display: none;
+}
+
+#wp-admin-bar-wp-logo {
+	display: none
+}
+
+.sticky-menu #adminmenuwrap,
+#wpadminbar,
+#adminmenu li.menu-top,
+#adminmenu div.wp-menu-name,
+#adminmenuback {
+	background-color: #255466;
+	background-color: #161d46;
+	background-color: #000;
+}
+
+#wpadminbar {
+	width: calc(100% + 0px);
+	float: right;
+	position: relative;
+	right: 0px;
+	left: auto;
+	top: 0;
+	height: 50px;
+	background: #fff;
+	border-bottom: 1px solid #ebeff4;
+	padding: 0px 10px;
+	z-index: 1;
+}
+
+#adminmenu li.wp-menu-separator {
+  margin: 0;
+  border-bottom: 1px solid #595959;
+  height: 0;
+}
+
+#adminmenu .wp-has-current-submenu .wp-submenu {
+	background-color: #2c2c2c;
+}
+
+#collapse-button {
+	display: none;
+}
+
+#adminmenu div.wp-menu-name {
+	/* text-transform: uppercase;
+	font-size: 11px; */
+	font-size: 13px;
+	font-weight: 400;
+}
+
+#adminmenu,
+#adminmenu .wp-submenu,
+#adminmenuback,
+#adminmenuwrap {
+	/* width: 200px; */
+}
+
+#wpcontent,
+#wpfooter {
+	/* margin-left: 200px; */
+}
+
+.wrap h1 {
+	text-transform: uppercase;
+	font-weight: 800;
+	font-size: 21px;
+}
+
+.search-box input[name="s"] {
+	border-radius: 0px;
+	border: none;
+	border-bottom: 1px solid #dee0e2;
+}
+
+.wp-core-ui .button {
+	background: #161e46;
+	color: #fff;
+	border-radius: 6px;
+	border: none;
+	text-transform: uppercase;
+	font-size: 11px;
+	font-weight: 500;
+	transition: 0.2s;
+	display: inline-flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.wp-core-ui .button:hover {
+	background: #123947;
+	color: #fff;
+}
+
+.tablenav .actions select {
+	border-radius: 0px;
+	border-color: #e8e9eb;
+}
+
+#wpadminbar .quicklinks>ul>li>a,
+#wpadminbar ul li:last-child .ab-item,
+#wpadminbar #wp-admin-bar-my-sites a.ab-item,
+#wpadminbar #wp-admin-bar-site-name a.ab-item {
+	color: #636363;
+	text-transform: uppercase;
+	line-height: 50px;
+	font-size: 12px;
+	height: 50px;
+	font-weight: 600;
+}
+
+#yoast-ab-icon {
+	position: relative;
+	top: 7px;
+}
+
+.wp-admin #wpadminbar #wp-admin-bar-site-name>.ab-item:before {
+	content: "\f11f";
+	color: #636363;
+	line-height: 42px;
+	padding: 0px;
+}
+
+#wp-admin-bar-my-account>.ab-item:before {
+	color: #636363;
+	line-height: 42px;
+	padding: 0px;
+}
+
+#dashboard-widgets-wrap .postbox {
+	border: 1px solid #ebeff4;
+}
+
+#wpseo-dashboard-overview a.button {
+	line-height: 35px;
+}
+
+#wpseo-dashboard-overview .onpage .button.landing-page {
+	border-color: #d54e20;
+	background: #d54e20;
+	box-shadow: none;
+	transition: 0.4s;
+}
+
+#wpseo-dashboard-overview .onpage .button.landing-page:hover {
+	background: #d94614;
+}
+
+#wpadminbar ul#wp-admin-bar-root-default>li:hover a {
+	background: #f4f6f8;
+}
+
+#wpadminbar .quicklinks ul {
+	background: #f4f6f8;
+}
+
+#adminmenu li.menu-top:hover {
+	background-color: #000;
+}
+
+.js #adminmenu .opensub .wp-submenu {
+	background: #ebeff4;
+}
+
+#adminmenu .wp-not-current-submenu li>a {
+	color: #8bc8ff;
+}
+
+#adminmenu .wp-not-current-submenu li>a:hover {
+	color: #8bc8ff;
+}
+
+#adminmenu li.menu-top::after,
+#adminmenu .wp-not-current-submenu .wp-submenu::after {
+	display: none;
+}
+
+.imgBoasVindas {
+	background: url("../img/home_page_dashboard.svg") no-repeat scroll center 0 transparent;
+	position: absolute;
+	height: 270px;
+	width: 50%;
+	top: 50px;
+	right: 0px;
+	background-size: contain;
+}
+
+#wpadminbar .ab-top-menu>li.hover>.ab-item {
+	background: #fff;
+}
+
+#wpadminbar .quicklinks .menupop.hover ul li .ab-item,
+#wpadminbar #wp-admin-bar-user-info .display-name {
+	color: #636363;
+}
+
+#wpadminbar .quicklinks>ul>li>a {
+	background: #fff;
+}
+
+#wpadminbar:not(.mobile) .ab-top-menu>li:hover>.ab-item {
+	background: #fff;
+}
+
+#adminmenu li.wp-has-current-submenu a.wp-has-current-submenu {
+	background: #000000;
+}
+
+.js #adminmenu .opensub .wp-submenu {
+	background-color: #2c2c2c;
+}
+
+#adminmenu .wp-not-current-submenu li>a {
+	color: #fff;
+}
+
+@media only screen and (max-width : 768px) {
+	#adminmenu .wp-not-current-submenu li>a {
+		color: #8bc8ff;
+	}
+
+	#adminmenu .wp-not-current-submenu li>a:hover {
+		color: #8bc8ff;
+	}
+}
+
+@media (min-width: 783px) {
+	.interface-interface-skeleton {
+		top: 52px;
+	}
+}
+
+.block-editor-page #wpadminbar {
+	width: calc(100% + -20px);
+}
+
+#wp-admin-bar-new-content>* {
+	display: flex;
+	color: black;
+	align-items: center;
+}
+
+#wp-admin-bar-comments,
+#wp-admin-bar-new-content {
+	display: none;
+}
+
+/* override lazyblock bug */
+.lzb-gutenberg-repeater-item .lzb-gutenberg-repeater-item-content>div {
+	padding: 0;
+}
+.lzb-gutenberg-repeater-item .lzb-gutenberg-repeater-item-content>div>.components-base-control {
+	padding-left: 15px;
+}
