@@ -1,18 +1,7 @@
 #nosso-impacto {
-  .section-img-left {
-    padding: 40px 20px 20px;
-    h1 {
-      font-size: 48px;
-      font-weight: bold;
-    }
-    h2 {
-      font-size: 32px;
-      font-weight: bold;
-    }
-  }
-
+  .section-img-left,
   .section-img-right {
-    padding: 40px 20px 20px;
+    padding: 62px 24px;
     h1 {
       font-size: 48px;
       font-weight: bold;
@@ -20,6 +9,10 @@
     h2 {
       font-size: 32px;
       font-weight: bold;
+    }
+    p {
+      font-size: 18px;
+      max-width: 430px;
     }
   }
 
@@ -30,18 +23,20 @@
       font-size: 40px;
       font-weight: bold;
       text-align: center;
+      line-height: 1.4;
     }
     p {
       font-size: 24px;
+      font-weight: bold;
     }
     .cards {
+      display: grid;
+
+      grid-template-columns: repeat(4, 1fr);
+      gap: 38px;
       text-align: center;
       .cards-wrapper {
-        border-radius: 10px;
-        .icon {
-          width: 50px;
-          height: 50px;
-        }
+        border-radius: 20px;
       }
     }
   }
