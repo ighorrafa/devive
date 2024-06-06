@@ -84,6 +84,7 @@ function devive_scripts()
 	$requirements = ['jquery'];
 
 	wp_enqueue_style('Merriweather', "https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;500;700&display=swap");
+	wp_enqueue_style('Manrope', "https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700&display=swap");
 
 	// wp_enqueue_style('slick', get_template_directory_uri() . "/assets/js/libs/slick/slick.css", array(), '1.8.1');
 	// wp_enqueue_style('slick-theme', get_template_directory_uri() . "/assets/js/libs/slick/slick-theme.css", array(), '1.8.1');

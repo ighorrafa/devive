@@ -13,9 +13,15 @@
         </div>
     </section>
     <section class="dcnt">
-        <h1 class="color-dark-blue mb-5"><?php the_field('titulo_dcnt'); ?></h1>
-        <p><?php the_field('descricao_dcnt'); ?></p>
-        <a class="btn bg-blue" href="<?php the_field('link') ?>"><?php the_field('label') ?></a>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <h1 class="color-dark-blue mb-5"><?php the_field('titulo_dcnt'); ?></h1>
+                    <p><?php the_field('descricao_dcnt'); ?></p>
+                    <a class="btn bg-blue" href="<?php the_field('link') ?>"><?php the_field('label') ?></a>
+                </div>
+            </div>
+        </div>
     </section>
 </main>
 <?php get_footer(); ?>
