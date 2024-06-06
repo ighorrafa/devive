@@ -1,3 +1,38 @@
 #nosso-impacto {
-  // CODAR AQUI
+  .section-img-left {
+    padding: 40px 20px 20px;
+    h1 {
+      font-size: 48px;
+      font-weight: bold;
+    }
+    h2 {
+      font-size: 32px;
+      font-weight: bold;
+    }
+  }
+
+  .section-img-right {
+    padding: 40px 20px 20px;
+    h1 {
+      font-size: 48px;
+      font-weight: bold;
+    }
+    h2 {
+      font-size: 32px;
+      font-weight: bold;
+    }
+  }
+
+  .transparency-and-eficience {
+    h2 {
+      font-size: 48px;
+      font-weight: bold;
+    }
+  }
+
+  .image-wrapper {
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+  }
 }
