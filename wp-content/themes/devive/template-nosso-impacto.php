@@ -11,7 +11,7 @@ get_header(); ?>
             </div>
             <div class="col-lg-6 p-5 align-content-center">
                 <h2 class="color-dark-blue mb-5"><?php the_field('titulo_secao_1'); ?></h2>
-                <p><?php the_field('descricao_secao_1'); ?></p>
+                <p class="color-dark-blue"><?php the_field('descricao_secao_1'); ?></p>
             </div>
         </div>
     </section>
@@ -19,9 +19,9 @@ get_header(); ?>
         <div class="d-flex justify-content-between">
             <div class="col-lg-6 align-content-center">
                 <h2 class="color-dark-blue mb-5 "><?php the_field('titulo_secao_2'); ?></h2>
-                <p><?php the_field('descricao_secao_2'); ?></p>
+                <p class="color-dark-blue"><?php the_field('descricao_secao_2'); ?></p>
             </div>
-            <div class="col-lg-6 p-5 image-wrapper">
+            <div class="col-lg-6 image-wrapper">
                 <?php $imagemSecao1 = get_field('imagem_secao_2'); ?>
                 <?php echo wp_get_attachment_image($imagemSecao1['id'], 'full') ?>
             </div>
@@ -35,7 +35,7 @@ get_header(); ?>
             </div>
             <div class="col-lg-6 p-5 align-content-center">
                 <h2 class="color-dark-blue mb-5"><?php the_field('titulo_secao_3'); ?></h2>
-                <p><?php the_field('descricao_secao_3'); ?></p>
+                <p class="color-dark-blue"><?php the_field('descricao_secao_3'); ?></p>
             </div>
         </div>
     </section>
