@@ -24,9 +24,25 @@
   }
 
   .transparency-and-eficience {
+    padding-top: 50px;
+    padding-bottom: 80px;
     h2 {
-      font-size: 48px;
+      font-size: 40px;
       font-weight: bold;
+      text-align: center;
+    }
+    p {
+      font-size: 24px;
+    }
+    .cards {
+      text-align: center;
+      .cards-wrapper {
+        border-radius: 10px;
+        .icon {
+          width: 50px;
+          height: 50px;
+        }
+      }
     }
   }
 

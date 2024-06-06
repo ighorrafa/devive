@@ -43,6 +43,42 @@ get_header(); ?>
         <div class="d-flex justify-content-center">
             <h2 class="color-dark-blue mb-5"><?php the_field('titulo_secao_4'); ?></h2>
         </div>
+        <!-- <div class="cards d-flex flex-rowd-flex justify-content-around">
+            <?php
+                $itens = get_field('cards_secao_4');
+                foreach($itens as $item):
+            ?>
+                <div class="bg-blue p-3 cards-wrapper">
+                    <div>
+                        <?php $icon = get_field('icone'); ?>
+                        <?php echo wp_get_attachment_image($icon['id'], 'full') ?>
+                    </div>
+                    <div>
+                        <p class="color-dark-blue"><?php echo $item['descricao'] ?></p>
+                    </div>
+                </div>
+            <?php
+                endforeach;
+            ?>
+        </div> -->
+        <div class="cards d-flex flex-rowd-flex justify-content-center">
+            <?php
+                $itens = get_field('cards_secao_4');
+                foreach($itens as $item):
+            ?>
+                <div class="bg-blue cards-wrapper p-5 m-3">
+                    <div class="icon mb-5">
+                        <?php $icon = $item['icone']; ?>
+                        <?php echo wp_get_attachment_image($icon['id'], 'full') ?>
+                    </div>
+                    <div class="d-flex align-items-end">
+                        <p class="color-dark-blue"><?php echo $item['descricao'] ?></p>
+                    </div>
+                </div>
+            <?php
+                endforeach;
+            ?>
+        </div>
     </section>
 </main>
 <?php get_footer(); ?>
