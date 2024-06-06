@@ -15,9 +15,9 @@
 
 		<header id="masthead" class="site-header">
 			<div class="nav-wrapper container">
-				<div class="row py-3">
+				<div class="row py-3 justify-content-between">
 					<div class="col-auto col-lg-4 d-flex align-items-center"><?php the_custom_logo() ?></div>
-					<div class="col-lg d-none d-lg-flex align-items-center">
+					<div class="col-lg-4 d-none d-lg-flex align-items-center">
 						<?php wp_nav_menu([
 							'theme_location' => 'primary-menu',
 							'container' => '',

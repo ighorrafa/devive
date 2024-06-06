@@ -1,7 +1,27 @@
 footer.site-footer {
-	background: black;
-	.custom-logo {
-		max-width: 100%;
-		object-fit: contain;
-	}
+  padding: 80px 24px;
+  .custom-logo {
+    max-width: 100%;
+    object-fit: contain;
+  }
+  .menu {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 185px;
+    .menu-item {
+      a {
+        color: white;
+        font-weight: w(bold);
+        font-size: 20px;
+        margin: 10px 0;
+        display: block;
+      }
+      .sub-menu {
+        a {
+          font-weight: w(regular);
+          font-size: 16px;
+        }
+      }
+    }
+  }
 }
