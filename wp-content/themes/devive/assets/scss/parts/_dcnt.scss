@@ -1,3 +1,30 @@
 #dcnt {
-  // Codigo aqui
+  .banner {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 700px;
+    h1 {
+      font-size: 56px;
+      font-weight: w(bold);
+      max-width: 520px;
+      color: white;
+      text-align: center;
+    }
+  }
+  .section {
+    padding: 62px 24px;
+    h1 {
+      font-size: 48px;
+      font-weight: bold;
+    }
+    h2 {
+      font-size: 32px;
+      font-weight: bold;
+    }
+    p {
+      font-size: 18px;
+      max-width: 430px;
+    }
+  }
 }
