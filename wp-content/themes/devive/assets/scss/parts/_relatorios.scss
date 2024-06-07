@@ -1,0 +1,39 @@
+#relatorios {
+  .banner {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 700px;
+    h1 {
+      font-size: 56px;
+      font-weight: w(bold);
+      max-width: 520px;
+      color: white;
+      text-align: center;
+    }
+  }
+  .relatorios-wrapper {
+    padding: 112px 0;
+    h1 {
+      font-size: 48px;
+      color: c(dark-blue);
+      font-weight: bold;
+    }
+    .cards-wrapper {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      .card {
+        background: c(blue);
+        color: c(dark-blue);
+        font-size: 50px;
+        font-weight: bold;
+        padding: 100px 0;
+        border-radius: 20px;
+        text-align: center;
+        font-family: $fonthead;
+        cursor: pointer;
+      }
+    }
+  }
+}
