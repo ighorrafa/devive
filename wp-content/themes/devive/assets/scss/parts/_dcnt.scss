@@ -5,9 +5,9 @@
     background-repeat: no-repeat;
     min-height: 700px;
     h1 {
-      font-size: 56px;
-      font-weight: w(bold);
-      max-width: 520px;
+      font-size: 48px;
+      font-weight: 800;
+      max-width: 620px;
       color: white;
       text-align: center;
     }
@@ -24,13 +24,39 @@
     }
     p {
       font-size: 18px;
-      max-width: 430px;
+    }
+  }
+
+  .oquee {
+    padding: 140px 30px 250px;
+    h2 {
+      font-size: 40px;
+    }
+  }
+
+  .desafios {
+    padding: 100px 30px;
+  }
+
+  .causas {
+    padding: 250px 30px 70px;
+    .img-wrapper img {
+      border-radius: 20px;
+    }
+  }
+
+  .fatores-de-risco {
+    h2 {
+      font-size: 40px;
+      font-weight: bold;
+      text-align: center;
     }
   }
 
   .imagem-esquerda-container {
     border-radius: 20px;
     background-color: white;
+    text-align: center;
   }
   .fatores-risco-title-container {
     h2 {
@@ -39,16 +65,27 @@
   }
   .div-centralizada-container {
     border-radius: 20px;
+    padding: 100px 250px;
     p {
       text-align: center;
       font-size: 20px;
     }
   }
   .cards {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 38px;
+    gap: 20px;
     text-align: center;
+    .cards-wrapper {
+      border-radius: 20px;
+      width: 30%;
+      p {
+        font-weight: bold;
+      }
+    }
+  }
+  .cards2 {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 25px;
     .cards-wrapper {
       border-radius: 20px;
     }
@@ -79,15 +116,20 @@
       padding: 50px;
       border-radius: 25px;
       h2 {
-        font-size: 96px;
+        font-size: 85px;
         font-weight: bold;
         text-align: center;
         color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
         span {
-          font-size: 24px;
+          font-size: 64px;
+          font-weight: bold;
         }
         small {
-          font-size: 16px;
+          font-size: 24px;
         }
       }
       p {
@@ -96,5 +138,9 @@
         color: white;
       }
     }
+  }
+
+  .box-container {
+    gap: 4rem;
   }
 }
