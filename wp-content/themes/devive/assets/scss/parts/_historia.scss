@@ -1,0 +1,55 @@
+#historia {
+  padding: 100px 24px;
+  h1 {
+    font-weight: w(bold);
+    font-size: 40px;
+    margin-bottom: 60px;
+  }
+  .nav-pills {
+    margin-left: 5rem;
+    .nav-link {
+      font-size: 32px;
+      color: white;
+      font-weight: w(bold);
+      background-color: transparent;
+      cursor: pointer;
+      position: relative;
+      padding: 10px 3rem;
+      &.active {
+        color: c(dark-blue);
+        &::before {
+          background-color: c(dark-blue);
+        }
+      }
+      &:not(:last-child) {
+        &:after {
+          @include pseudo;
+          left: -10%;
+          top: 50%;
+          height: 100%;
+          width: 2px;
+          background-color: c(dark-blue);
+          z-index: 2;
+        }
+      }
+      &:before {
+        @include pseudo;
+        left: -10%;
+        top: 50%;
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        background: white;
+        transform: translate(-50%, -50%);
+        z-index: 3;
+      }
+    }
+  }
+  .tab-content {
+    background-color: white;
+    border-radius: 20px;
+    width: 850px;
+    height: 600px;
+    @include flexcenter;
+  }
+}
