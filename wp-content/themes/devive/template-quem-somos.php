@@ -3,27 +3,27 @@
 get_header(); ?>
 <main id="quem-somos">
     <section class="bg-blue secao1">
-       <div class="d-flex">
+       <div class="d-lg-flex">
            <div class="col-lg-6">
                <h2 class="color-dark-blue"><?php the_field('titulo_secao_1'); ?></h2>
                <p class="color-dark-blue"><?php the_field('descricao_secao_1'); ?></p>
                <a href="#"><?php the_field('link_secao_1'); ?></a>
            </div>
-           <div class="col-lg-6">
+           <div class="col-lg-6 my-lg-0 my-5">
                 <?php $imagemSecao1 = get_field('imagem_secao_1'); ?>
                 <?php echo wp_get_attachment_image($imagemSecao1['id'], 'full') ?>
            </div>
        </div>
     </section>
     <section class="secao2">
-       <div class="d-flex">
+       <div class="d-lg-flex flex-row-reverse">
+            <div class="col-lg-6 p-5 d-flex flex-column justify-content-center">
+               <h2 class="color-dark-blue"><?php the_field('titulo_secao_2'); ?></h2>
+               <p class="color-dark-blue"><?php the_field('descricao_secao_2'); ?></p>
+           </div>
            <div class="col-lg-6">
                 <?php $imagemSecao1 = get_field('imagem_secao_2'); ?>
                 <?php echo wp_get_attachment_image($imagemSecao1['id'], 'full') ?>
-           </div>
-           <div class="col-lg-6 p-5 d-flex flex-column justify-content-center">
-               <h2 class="color-dark-blue"><?php the_field('titulo_secao_2'); ?></h2>
-               <p class="color-dark-blue"><?php the_field('descricao_secao_2'); ?></p>
            </div>
        </div>
     </section>
@@ -31,7 +31,7 @@ get_header(); ?>
        <div class="d-flex justify-content-center">
             <h2 class="color-dark-blue"><?php the_field('titulo_secao_3'); ?></h2>
        </div>
-       <div class="row ">
+       <div class="row">
            <?php
                 $itens = get_field('repetidor_secao_3');
                 foreach ($itens as $item) :
