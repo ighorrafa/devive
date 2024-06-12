@@ -65,7 +65,7 @@
   }
   .div-centralizada-container {
     border-radius: 20px;
-    padding: 100px 250px;
+    // padding: 100px 250px;
     p {
       text-align: center;
       font-size: 20px;
@@ -84,7 +84,7 @@
   }
   .cards2 {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 25px;
     .cards-wrapper {
       border-radius: 20px;
@@ -143,4 +143,14 @@
   .box-container {
     gap: 4rem;
   }
+
+  // .fonte {
+  //   .image-wrapper {
+  //     img {
+  //       @media (max-width: 767px) {
+  //         max-width: 50%;
+  //       }
+  //     }
+  //   }
+  // }
 }
