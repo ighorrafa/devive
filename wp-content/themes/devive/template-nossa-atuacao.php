@@ -10,8 +10,10 @@ get_header(); ?>
                 <a href="#"><?php the_field('link_secao_1'); ?></a>
             </div>
             <div class="col-lg-6">
-                <?php $imagemSecao1 = get_field('imagem_secao_1'); ?>
-                <?php echo wp_get_attachment_image($imagemSecao1['id'], 'full') ?>
+                <div class="img-wrapper">
+                    <?php $imagemSecao1 = get_field('imagem_secao_1'); ?>
+                    <?php echo wp_get_attachment_image($imagemSecao1['id'], 'full') ?>
+                </div>
             </div>
         </div>
     </section>
@@ -50,9 +52,10 @@ get_header(); ?>
             foreach ($itens as $item) :
             ?>
                 <div class="d-flex justify-content-center">
-                    <div class="grid-item bg-yellow">
+                    <div class="grid-item bg-yellow gy-4">
                         <?php $icon = $item['imagem']; ?>
                         <?php echo wp_get_attachment_image($icon['id'], 'full') ?>
+                        <p><?php echo $item['descricao']; ?></p>
                     </div>
                 </div>
             <?php

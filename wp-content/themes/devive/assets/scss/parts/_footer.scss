@@ -5,9 +5,11 @@ footer.site-footer {
     object-fit: contain;
   }
   .menu {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 185px;
+    @include media-breakpoint-up(lg) {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 185px;
+    }
     .menu-item {
       a {
         color: white;

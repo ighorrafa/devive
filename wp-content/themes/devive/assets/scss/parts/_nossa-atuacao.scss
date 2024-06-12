@@ -1,7 +1,21 @@
 #nossa-atuacao {
   .sec-01 {
-    padding-left: 25px;
+    @include media-breakpoint-up(lg) {
+      padding-left: 25px;
+    }
+    @include media-breakpoint-down(lg) {
+      padding: 50px 15px;
+    }
+    .img-wrapper {
+      border-radius: 30px;
+      img {
+        border-radius: 30px;
+      }
+    }
     h2 {
+      @include media-breakpoint-down(lg) {
+        font-size: 30px;
+      }
       font-weight: bold;
       font-size: 48px;
       margin-bottom: 1em;
@@ -48,20 +62,45 @@
       margin-bottom: 1em;
     }
     .grid-container {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(3, 1fr);
-      gap: 100px;
+      @include media-breakpoint-up(lg) {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 100px;
+      }
+      gap: 30px;
       width: 100%;
     }
     .grid-item {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      & img,
+      & p {
+        @include transition;
+      }
+      @include flexcenter;
+      flex-direction: column;
       font-size: 2em;
       border-radius: 15px;
       width: 370px;
       height: 324px;
+      text-align: center;
+      padding: 15px;
+      p {
+        font-size: 14px;
+        color: c(dark-blue);
+        opacity: 0;
+        height: 0;
+      }
+      &:hover {
+        background-color: c(blue);
+        img {
+          max-width: 25%;
+        }
+        p {
+          opacity: 1;
+          height: auto;
+          padding-top: 20px;
+        }
+      }
     }
   }
 }
