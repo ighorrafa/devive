@@ -31,10 +31,13 @@
     }
     .cards {
       display: grid;
-
-      grid-template-columns: repeat(4, 1fr);
-      gap: 38px;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 5px;
       text-align: center;
+      @media (min-width: 768px) {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 38px;
+      }
       .cards-wrapper {
         border-radius: 20px;
       }

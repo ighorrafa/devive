@@ -49,7 +49,7 @@ get_header(); ?>
                 $itens = get_field('cards_secao_4');
                 foreach ($itens as $item) :
                 ?>
-                    <div class="bg-blue cards-wrapper d-flex flex-column align-items-center p-5">
+                    <div class="bg-blue cards-wrapper d-flex flex-column align-items-center py-5">
                         <div class="icon mb-5">
                             <?php $icon = $item['icone']; ?>
                             <?php echo wp_get_attachment_image($icon['id'], 'full') ?>
