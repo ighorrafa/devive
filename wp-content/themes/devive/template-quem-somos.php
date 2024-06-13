@@ -33,10 +33,10 @@ get_header(); ?>
         </div>
         <div class="row">
             <?php
-            $itens = get_field('repetidor_secao_3');
-            foreach ($itens as $item) :
+                $itens = get_field('repetidor_secao_3');
+                foreach ($itens as $item) :
             ?>
-                <div class="col-lg-6 px-5 d-flex flex-column justify-content-end">
+                <div class="col-lg-6 px-5 d-flex flex-column justify-content-end my-lg-0 my-5">
                     <div class="d-flex justify-content-center">
                         <?php $icon = $item['icone']; ?>
                         <?php echo wp_get_attachment_image($icon['id'], 'full') ?>
@@ -53,12 +53,15 @@ get_header(); ?>
             ?>
         </div>
         <hr class="line">
-        <div class="d-flex justify-content-center">
-            <?php $imagem = get_field('icone_secao_3'); ?>
-            <?php echo wp_get_attachment_image($imagem['id'], 'full') ?>
-        </div>
-        <div class="content-wrapper-margin">
-            <h3 class="color-dark-blue"><?php the_field('subtitulo_secao_3'); ?></h3>
+        <div class="my-lg-0 my-5">
+            <div class="d-flex justify-content-center">
+                <?php $imagem = get_field('icone_secao_3'); ?>
+                <?php echo wp_get_attachment_image($imagem['id'], 'full') ?>
+            </div>
+            <div class="content-wrapper-margin">
+                <h3 class="color-dark-blue"><?php the_field('subtitulo_secao_3'); ?></h3>
+                <p class="color-dark-blue"><?php the_field('subititulo_2'); ?></p>
+            </div>
         </div>
         <div class="d-flex flex-row justify-content-around">
             <?php
@@ -66,7 +69,7 @@ get_header(); ?>
             $itens = get_field('imagens_secao_3');
             foreach ($itens as $item) :
             ?>
-                <div class="modal-card position-relative" data-bs-toggle="modal" data-bs-target="#modal<?php echo $count ?>">
+                <div class="modal-card teste conselho-foto-pessoas position-relative" data-bs-toggle="modal" data-bs-target="#modal<?php echo $count ?>">
                     <figure class="h-100 w-100 overflow-hidden">
                         <?php $icon = $item['imagem']; ?>
                         <?php echo wp_get_attachment_image($icon['id'], 'full') ?>
@@ -146,8 +149,12 @@ get_header(); ?>
         <div class="d-flex justify-content-center">
             <h2 class="color-dark-blue"><?php the_field('titulo_secao_5'); ?></h2>
         </div>
-        <div class="d-flex justify-content-center margin-container">
+        <div class="d-flex justify-content-center margin-container show-desktop-image">
             <?php $imagemSecao1 = get_field('imagem_secao_5'); ?>
+            <?php echo wp_get_attachment_image($imagemSecao1['id'], 'full') ?>
+        </div>
+        <div class="d-flex justify-content-center margin-container show-mobile-image">
+            <?php $imagemSecao1 = get_field('imagem_mobile'); ?>
             <?php echo wp_get_attachment_image($imagemSecao1['id'], 'full') ?>
         </div>
     </section>
