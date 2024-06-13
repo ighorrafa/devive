@@ -77,7 +77,7 @@ get_header(); ?>
                 <h2 class="color-dark-blue mb-5"><?php the_field('titulo_1_secao_5'); ?></h2>
             </div>
         </div>
-        <div class="cards d-flex flex-wrap-reverse justify-content-center">
+        <div class="cards d-flex flex-wrap flex-wrap-lg-reverse justify-content-center">
             <?php
             $itens = get_field('cards_section_5');
             $count1 = 0;
@@ -98,16 +98,16 @@ get_header(); ?>
         </div>
         <div class="cards2">
             <?php
-                $itens = get_field('cards_2_secao_5');
-                $count = 0;
-                foreach ($itens as $item) :
+            $itens = get_field('cards_2_secao_5');
+            $count = 0;
+            foreach ($itens as $item) :
             ?>
-                <div class="cards-wrapper bg-dark-blue d-flex flex-column align-items-center p-5 card-<?php echo $count; ?>">
+                <div class="cards-wrapper bg-dark-blue d-flex flex-column align-items-center py-5 card-<?php echo $count; ?>">
                     <p class="color-white m-0"><?php echo $item['descricao'] ?></p>
                 </div>
             <?php
                 $count++;
-                endforeach;
+            endforeach;
             ?>
         </div>
         <div class="fatores-risco-title-container pt-5 d-flex justify-content-center">
@@ -117,15 +117,15 @@ get_header(); ?>
         </div>
         <div class="cards eobrasil-container d-flex flex-wrap-reverse justify-content-center">
             <?php
-                $itens = get_field('cards_3_secao_5');
-                foreach ($itens as $item) :
+            $itens = get_field('cards_3_secao_5');
+            foreach ($itens as $item) :
             ?>
-                <div class="cards-wrapper d-flex flex-column align-items-center p-5">
+                <div class="d-flex flex-column align-items-center p-5">
                     <h2 class="color-dark-blue mb-5"><?php echo $item['numero'] ?></h2>
                     <p class="color-dark-blue"><?php echo $item['descricao'] ?></p>
                 </div>
             <?php
-                endforeach;
+            endforeach;
             ?>
         </div>
         <div class="div-centralizada-container bg-yellow d-flex justify-content-center align-content-center p-5">

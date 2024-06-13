@@ -50,6 +50,9 @@
       font-size: 40px;
       font-weight: bold;
       text-align: center;
+      @media (max-width: 768px) {
+        font-size: 30px;
+      }
     }
   }
 
@@ -76,7 +79,10 @@
     text-align: center;
     .cards-wrapper {
       border-radius: 20px;
-      width: 30%;
+      width: 45%;
+      @media (min-width: 768px) {
+        width: 30%;
+      }
       p {
         font-weight: bold;
       }
@@ -84,8 +90,12 @@
   }
   .cards2 {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 25px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 25px;
+    }
     .cards-wrapper {
       border-radius: 20px;
     }
