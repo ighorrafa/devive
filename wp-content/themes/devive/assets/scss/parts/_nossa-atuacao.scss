@@ -70,6 +70,20 @@
       margin-bottom: 1em;
     }
     .grid-container {
+      /**Muda a cor e exibe o texto do card na resolucao mobile */
+      // @media (max-width: 776px) {
+      //   background-color: c(blue);
+      //   .grid-item {
+      //     img {
+      //       max-width: 25%;
+      //     }
+      //     p {
+      //       opacity: 1;
+      //       height: auto;
+      //       padding-top: 20px;
+      //     }
+      //   }
+      // }
       @include media-breakpoint-up(lg) {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -99,7 +113,7 @@
         height: 0;
       }
       &:hover {
-        background-color: c(blue);
+        background-color: c(red);
         img {
           max-width: 25%;
         }
