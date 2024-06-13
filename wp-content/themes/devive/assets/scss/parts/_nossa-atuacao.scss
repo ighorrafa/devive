@@ -53,6 +53,14 @@
       font-size: 24px;
       font-family: $font;
     }
+    @media (max-width: 776px) {
+      h2 {
+        font-weight: bold;
+        font-size: 30px;
+        margin-bottom: 1em;
+        text-align: center;
+      }
+    }
   }
   .sec-04 {
     padding: 150px 25px;
