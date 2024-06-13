@@ -77,8 +77,6 @@
         font-size: 24px;
         text-align: center;
       }
-      p {
-      }
       .line {
         display: none;
       }
@@ -143,6 +141,21 @@
       }
       .card-wrapper {
         opacity: 1;
+      }
+    }
+
+    .modal-mobile-view {
+      display: none;
+    }
+    @media (max-width: 776px) {
+      h5 {
+        font-size: 30px;
+        color: black;
+        margin-top: 1em;
+        margin-bottom: 1em;
+      }
+      .modal-mobile-view {
+        display: inline;
       }
     }
   }
