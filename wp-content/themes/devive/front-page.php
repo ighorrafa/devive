@@ -2,13 +2,15 @@
 <main id="front-page">
     <section class="banner bg-yellow">
         <div class="d-lg-flex align-items-center justify-content-between">
-            <div class="content-wrapper my-lg-0 my-5">
+            <div class="content-wrapper mt-lg-0 mt-5">
                 <h1 class="color-dark-blue mb-5 w-100"><?php the_field('titulo'); ?></h1>
                 <a class="btn bg-blue" href="<?php the_field('link') ?>"><?php the_field('label') ?></a>
             </div>
             <div class="d-lg-flex justify-content-end">
-                <?php $banner = get_field('imagem'); ?>
-                <?php echo wp_get_attachment_image($banner['id'], 'full') ?>
+                <?php $banner = get_field('imagem');
+                echo wp_get_attachment_image($banner['id'], 'full', '', array('class' => 'd-none d-lg-block'));
+                $banner_mobile = get_field('imagem_mobile');
+                echo wp_get_attachment_image($banner_mobile['id'], 'full', '', array('class' => 'd-lg-none d-block')) ?>
             </div>
         </div>
     </section>
@@ -28,24 +30,24 @@
         <div class="container bg-dark-blue box-wrapper w-75">
             <div class="d-lg-flex justify-content-around">
                 <?php
-                    $itens = get_field('itens');
-                    foreach($itens as $item):
+                $itens = get_field('itens');
+                foreach ($itens as $item) :
                 ?>
-                <div class="my-5 my-lg-0">
-                    <div class="row justify-content-center">
-                        <h2 class="mb-2 d-flex"><?php echo $item['titulo'] ?></h2>
-                        <p><?php echo $item['descricao'] ?></p>
+                    <div class="my-5 my-lg-0">
+                        <div class="row justify-content-center">
+                            <h2 class="mb-2 d-flex justify-content-center"><?php echo $item['titulo'] ?></h2>
+                            <p><?php echo $item['descricao'] ?></p>
+                        </div>
                     </div>
-                </div>
                 <?php
-                    endforeach;
+                endforeach;
                 ?>
             </div>
             <div class="d-flex justify-content-center">
                 <a class="btn dark d-inline mx-auto" href="<?php the_field('link_box') ?>"><?php the_field('label_box') ?></a>
             </div>
         </div>
-    </section>   
+    </section>
     <section class="talktous bg-blue">
         <div class="container">
             <div class="row align-items-center">
