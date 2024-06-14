@@ -22,8 +22,10 @@ get_header(); ?>
                 <p class="color-dark-blue"><?php the_field('descricao_secao_2'); ?></p>
             </div>
             <div class="col-lg-6">
-                <?php $imagemSecao1 = get_field('imagem_secao_2'); ?>
-                <?php echo wp_get_attachment_image($imagemSecao1['id'], 'full') ?>
+                <?php $imagemSecao2 = get_field('imagem_secao_2'); ?>
+                <?php echo wp_get_attachment_image($imagemSecao2['id'], 'full', '', array('class' => 'd-none d-lg-block')) ?>
+                <?php $imagemSecao2_mobile = get_field('imagem_secao_2_mobile'); ?>
+                <?php echo wp_get_attachment_image($imagemSecao2_mobile['id'], 'full', '', array('class' => 'd-lg-none d-block')) ?>
             </div>
         </div>
     </section>
@@ -33,8 +35,8 @@ get_header(); ?>
         </div>
         <div class="row">
             <?php
-                $itens = get_field('repetidor_secao_3');
-                foreach ($itens as $item) :
+            $itens = get_field('repetidor_secao_3');
+            foreach ($itens as $item) :
             ?>
                 <div class="col-lg-6 px-5 d-flex flex-column justify-content-end my-lg-0 my-5">
                     <div class="d-flex justify-content-center">
@@ -154,12 +156,10 @@ get_header(); ?>
             <h2 class="color-dark-blue"><?php the_field('titulo_secao_5'); ?></h2>
         </div>
         <div class="d-flex justify-content-center margin-container show-desktop-image">
-            <?php $imagemSecao1 = get_field('imagem_secao_5'); ?>
-            <?php echo wp_get_attachment_image($imagemSecao1['id'], 'full') ?>
-        </div>
-        <div class="d-flex justify-content-center margin-container show-mobile-image">
-            <?php $imagemSecao1 = get_field('imagem_mobile'); ?>
-            <?php echo wp_get_attachment_image($imagemSecao1['id'], 'full') ?>
+            <?php $imagemSecao4 = get_field('imagem_secao_5'); ?>
+            <?php echo wp_get_attachment_image($imagemSecao4['id'], 'full', '', array('class' => 'd-none d-lg-block')) ?>
+            <?php $imagemSecao4_mobile = get_field('imagem_mobile'); ?>
+            <?php echo wp_get_attachment_image($imagemSecao4_mobile['id'], 'full', '', array('class' => 'd-lg-none d-block')) ?>
         </div>
     </section>
 </main>
