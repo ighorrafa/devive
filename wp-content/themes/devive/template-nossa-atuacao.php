@@ -21,7 +21,7 @@ get_header(); ?>
         <div class="d-flex justify-content-center">
             <h2 class="color-dark-blue"><?php the_field('titulo_secao_2'); ?></h2>
         </div>
-        <div class="row justify-content-between">
+        <div class="row justify-content-lg-between justify-content-center">
             <?php
             $itens = get_field('repeditor_secao_2');
             foreach ($itens as $item) :

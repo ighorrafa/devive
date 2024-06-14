@@ -7,6 +7,13 @@
   }
   .nav-pills {
     margin-left: 5rem;
+    @include media-breakpoint-down(lg) {
+      flex-wrap: wrap;
+      margin: 0;
+      gap: 12px;
+      justify-content: center;
+      margin-bottom: 3rem;
+    }
     .nav-link {
       font-size: 32px;
       color: white;
@@ -30,6 +37,9 @@
           width: 2px;
           background-color: c(dark-blue);
           z-index: 2;
+          @include media-breakpoint-down(lg) {
+            display: none;
+          }
         }
       }
       &:before {
@@ -42,14 +52,27 @@
         background: white;
         transform: translate(-50%, -50%);
         z-index: 3;
+        @include media-breakpoint-down(lg) {
+          display: none;
+        }
+      }
+      @include media-breakpoint-down(lg) {
+        padding: 0;
+        width: 17%;
+        font-size: 18px;
       }
     }
   }
   .tab-content {
+    @include media-breakpoint-up(lg) {
+      width: 850px;
+      height: 600px;
+    }
+    @include media-breakpoint-down(lg) {
+      padding: 25px;
+    }
     background-color: white;
     border-radius: 20px;
-    width: 850px;
-    height: 600px;
     @include flexcenter;
   }
 }

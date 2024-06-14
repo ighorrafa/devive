@@ -1,7 +1,7 @@
 <section id="historia" class="bg-blue">
     <h1 class="color-dark-blue"><?php the_field('title'); ?></h1>
-    <div class="d-flex align-items-start justify-content-between">
-        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+    <div class="d-lg-flex align-items-start justify-content-between">
+        <div class="nav flex-lg-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
             <?php
             $historia = get_field('historia');
             $firstTab = true;
