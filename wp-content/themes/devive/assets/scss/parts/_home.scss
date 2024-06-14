@@ -66,6 +66,12 @@
         text-align: center;
         color: white;
       }
+      .icon {
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(20%, -20%);
+      }
       @media (max-width: 776px) {
         max-width: 100%;
         h2 {

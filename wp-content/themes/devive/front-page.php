@@ -31,7 +31,7 @@
         </div>
     </section>
     <section class="box">
-        <div class="container bg-dark-blue box-wrapper w-75">
+        <div class="container bg-dark-blue box-wrapper w-75 position-relative">
             <div class="d-lg-flex justify-content-around">
                 <?php
                 $itens = get_field('itens');
@@ -50,6 +50,7 @@
             <div class="d-flex justify-content-center">
                 <a class="btn dark d-inline mx-auto" href="<?php the_field('link_box') ?>"><?php the_field('label_box') ?></a>
             </div>
+            <?php echo wp_get_attachment_image(372, 'full', '', array('class' => 'icon')) ?>
         </div>
     </section>
     <section class="talktous bg-blue">
