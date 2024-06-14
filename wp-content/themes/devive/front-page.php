@@ -6,11 +6,15 @@
                 <h1 class="color-dark-blue mb-5 w-100"><?php the_field('titulo'); ?></h1>
                 <a class="btn bg-blue" href="<?php the_field('link') ?>"><?php the_field('label') ?></a>
             </div>
-            <div class="d-lg-flex justify-content-end">
+            <div class="d-lg-flex justify-content-end position-relative">
                 <?php $banner = get_field('imagem');
                 echo wp_get_attachment_image($banner['id'], 'full', '', array('class' => 'd-none d-lg-block'));
                 $banner_mobile = get_field('imagem_mobile');
-                echo wp_get_attachment_image($banner_mobile['id'], 'full', '', array('class' => 'd-lg-none d-block')) ?>
+                echo wp_get_attachment_image($banner_mobile['id'], 'full', '', array('class' => 'd-lg-none d-block'));
+
+                echo wp_get_attachment_image(370, 'full', '', array('class' => 'icon icon-01'));
+                echo wp_get_attachment_image(371, 'full', '', array('class' => 'icon icon-02'));
+                ?>
             </div>
         </div>
     </section>

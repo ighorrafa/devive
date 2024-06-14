@@ -16,6 +16,17 @@
         }
       }
     }
+    .icon {
+      position: absolute;
+      &.icon-01 {
+        top: 45%;
+        left: 0;
+      }
+      &.icon-02 {
+        top: 70%;
+        left: -20%;
+      }
+    }
   }
   .dcnt {
     padding: 100px 0 250px;
