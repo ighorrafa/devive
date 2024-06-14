@@ -49,13 +49,15 @@ get_header(); ?>
                 $itens = get_field('cards_secao_4');
                 foreach ($itens as $item) :
                 ?>
-                    <div class="bg-blue cards-wrapper d-flex flex-column align-items-center py-5">
-                        <div class="icon mb-5">
-                            <?php $icon = $item['icone']; ?>
-                            <?php echo wp_get_attachment_image($icon['id'], 'full') ?>
+                    <a href="<?php echo $item['link'] ?>" style="display: contents">
+                        <div class="bg-blue cards-wrapper d-flex flex-column align-items-center py-5">
+                            <div class="icon mb-5">
+                                <?php $icon = $item['icone']; ?>
+                                <?php echo wp_get_attachment_image($icon['id'], 'full') ?>
+                            </div>
+                            <p class="color-dark-blue m-0"><?php echo $item['descricao'] ?></p>
                         </div>
-                        <p class="color-dark-blue m-0"><?php echo $item['descricao'] ?></p>
-                    </div>
+                    </a>
                 <?php
                 endforeach;
                 ?>

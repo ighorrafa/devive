@@ -1,0 +1,14 @@
+#politicas {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  h1 {
+    font-size: 48px;
+    font-weight: w(bold);
+  }
+  .wp-block-heading {
+    font-size: 18px;
+    line-height: 1.2;
+    font-family: $font;
+  }
+}
