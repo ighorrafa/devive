@@ -33,12 +33,12 @@ get_header(); ?>
         <div class="d-flex justify-content-center">
             <h2 class="color-dark-blue"><?php the_field('titulo_secao_3'); ?></h2>
         </div>
-        <div class="row">
+        <div class="row d-lg-flex">
             <?php
             $itens = get_field('repetidor_secao_3');
             foreach ($itens as $item) :
             ?>
-                <div class="col-lg-6 px-5 d-flex flex-column justify-content-end my-lg-0 my-5">
+                <div class="col-lg-6 px-5 d-flex flex-column justify-content-end my-lg-0 my-5 align-items-center">
                     <div class="d-flex justify-content-center">
                         <?php $icon = $item['icone']; ?>
                         <?php echo wp_get_attachment_image($icon['id'], 'full') ?>
@@ -134,12 +134,15 @@ get_header(); ?>
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title mb-5" id="exampleModalLabel"><?php echo $item['nome'] ?></h5>
+                                <div class="">
+                                    <h5 class="modal-title" id="exampleModalLabel"><?php echo $item['nome'] ?></h5>
+                                </div>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
                                     <?php echo wp_get_attachment_image(142, 'full') ?>
                                 </button>
                             </div>
-                            <div class="modal-body">
+                            <div class="teste">
+                                <p class="my-4 color-dark-blue"><?php echo $item['cargo']; ?></p>
                                 <span><?php echo $item['descricao'] ?></span>
                             </div>
                         </div>

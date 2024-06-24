@@ -111,8 +111,8 @@ get_header(); ?>
             ?>
         </div>
         <div class="fatores-risco-title-container pt-5 d-flex justify-content-center">
-            <div class="col-lg-6 p-5 align-content-center">
-                <h2 class="color-dark-blue mb-5"><?php the_field('titulo_3_secao_5'); ?></h2>
+            <div class="col-lg-6 align-content-center mt-5">
+                <h2 class="color-dark-blue"><?php the_field('titulo_3_secao_5'); ?></h2>
             </div>
         </div>
         <div class="cards eobrasil-container d-flex flex-wrap-reverse justify-content-center">
