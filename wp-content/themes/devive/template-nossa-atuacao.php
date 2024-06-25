@@ -23,7 +23,7 @@ get_header(); ?>
         </div>
         <div class="row justify-content-lg-between justify-content-center">
             <?php
-            $itens = get_field('repeditor_secao_2');
+            $itens = get_field('repetidor_secao_2');
             foreach ($itens as $item) :
             ?>
                 <div class="card">

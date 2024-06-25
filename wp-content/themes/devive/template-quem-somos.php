@@ -7,7 +7,10 @@ get_header(); ?>
             <div class="col-lg-6">
                 <h2 class="color-dark-blue"><?php the_field('titulo_secao_1'); ?></h2>
                 <p class="color-dark-blue"><?php the_field('descricao_secao_1'); ?></p>
-                <a href="#"><?php the_field('link_secao_1'); ?></a>
+                <a href="<?php the_field('link_secao_1'); ?>" class="d-flex gap-2 align-items-center">
+                    <?php the_field('label_secao_1'); ?>
+                    <?php echo wp_get_attachment_image(423, 'full') ?>
+                </a>
             </div>
             <div class="col-lg-6 my-lg-0 my-5">
                 <?php $imagemSecao1 = get_field('imagem_secao_1'); ?>

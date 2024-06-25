@@ -11,7 +11,7 @@
       font-weight: bold;
     }
     p {
-      font-size: 24px;
+      font-size: 20px;
       max-width: 430px;
     }
     @media (max-width: 776px) {
@@ -37,11 +37,11 @@
     }
     .cards {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(1, 1fr);
       gap: 5px;
       text-align: center;
       @media (min-width: 768px) {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 38px;
       }
       .cards-wrapper {
