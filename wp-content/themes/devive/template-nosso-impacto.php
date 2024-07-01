@@ -39,7 +39,7 @@ get_header(); ?>
             </div>
         </div>
     </section>
-    <section class="transparency-and-eficience">
+    <section id="cards" class="transparency-and-eficience">
         <div class="d-flex justify-content-center">
             <h2 class="color-dark-blue mb-5"><?php the_field('titulo_secao_4'); ?></h2>
         </div>

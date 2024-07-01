@@ -18,7 +18,7 @@ get_header(); ?>
             </div>
         </div>
     </section>
-    <section class="secao2">
+    <section id="historia" class="secao2">
         <div class="d-lg-flex flex-row-reverse">
             <div class="col-lg-6 p-5 d-flex flex-column justify-content-center">
                 <h2 class="color-dark-blue"><?php the_field('titulo_secao_2'); ?></h2>
@@ -32,7 +32,7 @@ get_header(); ?>
             </div>
         </div>
     </section>
-    <section class="bg-yellow secao3 p-5">
+    <section id="governanca" class="bg-yellow secao3 p-5">
         <div class="d-flex justify-content-center">
             <h2 class="color-dark-blue"><?php the_field('titulo_secao_3'); ?></h2>
         </div>
@@ -108,7 +108,7 @@ get_header(); ?>
             ?>
         </div>
     </section>
-    <section class="secao4">
+    <section id="equipe" class="secao4">
         <div class="d-flex justify-content-center my-5 my-lg-0">
             <h2 class="color-dark-blue"><?php the_field('titulo_secao_4'); ?></h2>
         </div>
@@ -157,7 +157,7 @@ get_header(); ?>
             ?>
         </div>
     </section>
-    <section class="secao4 bg-blue">
+    <section id="parceiros" class="secao4 bg-blue">
         <div class="d-flex justify-content-center">
             <h2 class="color-dark-blue"><?php the_field('titulo_secao_5'); ?></h2>
         </div>

@@ -2,7 +2,7 @@
 // Template Name: Nossa atuação
 get_header(); ?>
 <main id="nossa-atuacao">
-    <section class="bg-yellow sec-01">
+    <section id="causa" class="bg-yellow sec-01">
         <div class="row align-items-center">
             <div class="col-lg-6">
                 <h2 class="color-dark-blue"><?php the_field('titulo_secao_1'); ?></h2>
@@ -17,7 +17,7 @@ get_header(); ?>
             </div>
         </div>
     </section>
-    <section class="sec-02">
+    <section id="dcnts" class="sec-02">
         <div class="d-flex justify-content-center">
             <h2 class="color-dark-blue"><?php the_field('titulo_secao_2'); ?></h2>
         </div>
@@ -44,7 +44,7 @@ get_header(); ?>
         </div>
     </section>
     <?php get_template_part('historia'); ?>
-    <section class="sec-04">
+    <section id="parceiras" class="sec-04">
         <h2 class="color-dark-blue text-center"><?php the_field('titulo_secao_4'); ?></h2>
         <div class="grid-container">
             <?php
