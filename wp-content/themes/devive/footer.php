@@ -13,7 +13,7 @@
 				<?php
 				$sociais = get_field('sociais', 'dados');
 				foreach ($sociais as $item) : ?>
-					<a href="<?php $item['url'] ?>">
+					<a href="<?php echo $item['url'] ?>" target="_blank">
 						<?php echo wp_get_attachment_image($item['icon']['id'], 'full') ?>
 					</a>
 				<?php endforeach; ?>
