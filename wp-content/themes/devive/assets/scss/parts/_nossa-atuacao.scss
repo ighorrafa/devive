@@ -42,6 +42,8 @@
     img {
       margin-top: 2em;
       margin-bottom: 2em;
+      min-height: 85px;
+      object-fit: contain;
     }
     P {
       font-size: 18px;
