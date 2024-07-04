@@ -51,13 +51,13 @@ get_header(); ?>
             $itens = get_field('imagens_secao_4');
             foreach ($itens as $item) :
             ?>
-                <div class="d-flex justify-content-center my-lg-0 my-5">
+                <a target="_blank" href="<?php echo $item['link'] ?>" class="d-flex justify-content-center my-lg-0 my-5">
                     <div class="grid-item bg-yellow gy-4">
                         <?php $icon = $item['imagem']; ?>
                         <?php echo wp_get_attachment_image($icon['id'], 'full') ?>
                         <p><?php echo $item['descricao']; ?></p>
                     </div>
-                </div>
+                </a>
             <?php
             endforeach;
             ?>
