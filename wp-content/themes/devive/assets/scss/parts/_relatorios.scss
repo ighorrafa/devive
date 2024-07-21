@@ -36,4 +36,20 @@
       }
     }
   }
+  #modalForm .modal-dialog {
+    max-width: 470px;
+    input {
+      background-color: c(yellow);
+      color: c(dark-blue);
+      width: 100%;
+      border: none;
+      font-weight: w(medium);
+      &::placeholder {
+        color: c(dark-blue);
+      }
+      &[type="submit"] {
+        background-color: c(blue);
+      }
+    }
+  }
 }

@@ -1,5 +1,5 @@
 <?php
-// Template Name: Relatórios
+// Template Name: Relatórioz
 get_header(); ?>
 <main id="relatorios">
     <?php $banner = get_field('banner') ?>
@@ -44,25 +44,22 @@ get_header(); ?>
             <?php endforeach; ?>
         </div>
     </div>
-</main>
-
-<div class="modal fade" id="modalForm" tabindex="-1" aria-labelledby="modalForm" aria-hidden="true" data-backdrop="static">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Cadastre-se</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                    <?php echo wp_get_attachment_image(142, 'full') ?>
-                </button>
-            </div>
-            <div class="modal-body">
-                <p>Agradecemos o interesse em nossas publicações.<br>
-                    Para acessar, por favor faça seu cadastro ou login.</p>
-                <?php echo do_shortcode('[contact-form-7 id="c837334" title="FormulárioRelatorios"]') ?>
+    <div class="modal fade" id="modalForm" tabindex="-1" aria-labelledby="modalForm" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Cadastre-se agora</h5>
+                </div>
+                <div class="modal-body">
+                    <p>Agradecemos o interesse em nossas publicações.<br>
+                        Para acessar, por favor faça seu cadastro ou login.</p>
+                    <?php echo do_shortcode('[contact-form-7 id="c837334" title="FormulárioRelatorios"]') ?>
+                </div>
             </div>
         </div>
     </div>
-</div>
+</main>
+
 <?php get_footer(); ?>
 
 <script>
