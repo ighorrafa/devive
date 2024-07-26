@@ -118,7 +118,7 @@ get_header(); ?>
             foreach ($itens as $item) :
             ?>
                 <div class="modal-card position-relative m-lg-5 m-md-3" data-bs-toggle="modal" data-bs-target="#modal<?php echo $count ?>">
-                    <figure class="h-100 w-100 overflow-hidden">
+                    <figure class="h-100 w-100 overflow-hidden mb-5 mb-lg-0">
                         <?php $icon = $item['imagem']; ?>
                         <?php echo wp_get_attachment_image($icon['id'], 'full') ?>
                     </figure>
@@ -127,10 +127,6 @@ get_header(); ?>
                         <div>
                             <div class="btn-card">Clique para saber mais</div>
                         </div>
-                    </div>
-                    <div class="modal-mobile-view">
-                        <h5><?php echo $item['nome']; ?></h5>
-                        <p><?php echo $item['descricao'] ?></p>
                     </div>
                 </div>
                 <div class="modal fade" id="modal<?php echo $count ?>" tabindex="-1" aria-labelledby="modal<?php echo $count ?>" aria-hidden="true">
