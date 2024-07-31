@@ -68,13 +68,13 @@ get_header(); ?>
                 <p class="color-dark-blue"><?php the_field('subititulo_2'); ?></p>
             </div>
         </div>
-        <div class="d-flex flex-row justify-content-around">
+        <div class="d-flex flex-column flex-lg-row justify-content-around gap-5">
             <?php
             $count = 0;
             $itens = get_field('imagens_secao_3');
             foreach ($itens as $item) :
             ?>
-                <div class="modal-card teste conselho-foto-pessoas position-relative" data-bs-toggle="modal" data-bs-target="#modal<?php echo $count ?>">
+                <div class="modal-card conselho-foto-pessoas position-relative" data-bs-toggle="modal" data-bs-target="#modal<?php echo $count ?>">
                     <figure class="h-100 w-100 overflow-hidden">
                         <?php $icon = $item['imagem']; ?>
                         <?php echo wp_get_attachment_image($icon['id'], 'full') ?>
