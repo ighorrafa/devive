@@ -3,6 +3,9 @@
   background-size: cover;
   background-position: center;
   background-color: c(yellow);
+  @include media-breakpoint-down(lg) {
+    background-image: none !important;
+  }
   h1 {
     font-size: 48px;
     font-weight: w(bold);

@@ -73,7 +73,7 @@ get_header(); ?>
         });
 
         // Verificar envio do formulário
-        document.addEventListener('wpcf7mailsent', function(event) {
+        document.addEventListener('wpcf7submit', function(event) {
             modal.modal('hide');
             var date = new Date();
             date.setTime(date.getTime() + (7 * 24 * 60 * 60 * 1000)); // 7 dias em milissegundos
