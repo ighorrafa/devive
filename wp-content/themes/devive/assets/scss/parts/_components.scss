@@ -61,6 +61,10 @@
           padding: 0;
           border: none;
           cursor: pointer;
+          @include media-breakpoint-down(lg) {
+            top: -35px;
+            right: -35px;
+          }
         }
       }
       .modal-body {
